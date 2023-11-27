@@ -24,14 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Install Smartbear
-        run: | 
-         echo "Installing Smartbear API"  
-         sudo apt-get update -y && sudo apt-get install -y lsb-release software-properties-common && sudo apt-get clean all
-         sudo apt-get install wget curl gnupg apt-utils fontconfig jq -y 
-         curl https://dl.eviware.com/ready-api/3.46.0/ReadyAPI-x64-3.46.0.sh -o ReadyAPI-x64-3.46.0.sh
-         sudo chmod +x ./ReadyAPI-x64-3.46.0.sh
+      - name: Download and install ReadyAPI
+        run: |
+          wget -O ReadyAPI.tar.gz https://your-download-link/ReadyAPI-x64-x.y.z.tar.gz
+          tar -xzf ReadyAPI.tar.gz
 
       - name: Run ReadyAPI tests
         run: |
-         /path/to/ReadyAPI/**/testrunner.sh -s"DetectLanguageAPI" -c"Negative_Authentication is missing or wrong Authentication API Key" -r"results"
+          /path/to/ReadyAPI/bin/testrunner.sh -s"DetectLanguageAPI" -c"Negative_Authentication is missing or wrong Authentication API Key" -r"results"
+
