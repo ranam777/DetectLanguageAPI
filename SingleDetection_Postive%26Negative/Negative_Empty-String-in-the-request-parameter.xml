@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6730596e-a0a5-4760-84dc-b57903f4f20f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Negative_Empty String in the request parameter" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="577cea02-73e9-47bc-bc76-ec57e82be17a"><con:setting id="6730596e-a0a5-4760-84dc-b57903f4f20ffileName">Negative_Empty-String-in-the-request-parameter</con:setting></con:settings>
+      <con:testStep type="properties" name="Properties" id="9a1a1a75-bc01-424b-8f81-d3101e14c41b">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>ReportFile</con:name>
+              <con:value>H:\Srinivas\Personal Project\New folder\Detect-Language-API-readyapi-project.xml/../AutomationReports\SingleDetection_Negative_Empty String in the request parameter_TestReportFile _2023-11-27-14-42-41.xls</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Final Result</con:name>
+              <con:value>Values are Matching in the Comparison</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Issue Result</con:name>
+              <con:value>Values are not Matching in the Comparison</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Pass</con:name>
+              <con:value>PASS</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Fail</con:name>
+              <con:value>Fail</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Failed Respose</con:name>
+              <con:value>Response is 200 OK</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Create Report Template" id="ef67c2de-db2b-4094-88c0-d624fd78bac2">
+        <con:settings/>
+        <con:config>
+          <script>import  java.io.*;
+import jxl.* ; 
+import jxl.write.* ; 
+import java.io.BufferedWriter; 
+import java.io.File; 
+import java.io.FileWriter; 
+import java.io.IOException;
+import java.io.Writer;
+import java.text.SimpleDateFormat;  
+import java.util.Date; 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.BufferedWriter; 
+
+import org.apache.poi.hssf.usermodel.*;
+import  org.apache.poi.hssf.usermodel.HSSFSheet;
+import  org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import  org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle; 
+import org.apache.poi.hssf.usermodel.HSSFFont; 
+import org.apache.poi.ss.usermodel.ClientAnchor;
+import org.apache.poi.ss.usermodel.CreationHelper;
+import org.apache.poi.ss.usermodel.Drawing;
+import org.apache.poi.ss.usermodel.Picture;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.util.IOUtils;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle; 
+import org.apache.poi.hssf.usermodel.HSSFFont; 
+import org.apache.poi.ss.usermodel.IndexedColors; 
+import org.apache.poi.util.*;
+import org.apache.poi.ss.usermodel.Drawing;
+import org.apache.poi.ss.usermodel.Picture;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
+
+Date date = new Date();  
+SimpleDateFormat formatter = new SimpleDateFormat('yyyy-MM-dd-HH-mm-ss');  
+String strDate= formatter.format(date);  
+
+def myPath=testRunner.getTestCase().getTestSuite().getProject().getPath();
+ log.info("myPath Value " + myPath);
+def fileBase=myPath+'/../' +context.expand( '${#TestCase#ReportFilePath}' );
+log.info("fileBase"+fileBase);
+new File(fileBase+"AutomationReports").mkdirs() 
+//file2=fileBase+TestCase+"TestDataReports"+"\\"; 
+String filename = fileBase +"AutomationReports"+"\\"+ "SingleDetection_Negative_Empty String in the request parameter_TestReportFile " + "_" + strDate + ".xls"; 
+log.info(filename);
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("ReportFile", filename); 
+
+
+try 
+{
+            
+            HSSFWorkbook workbook = new HSSFWorkbook();
+            HSSFSheet sheet = workbook.createSheet("TestReport");  
+           sheet .autoSizeColumn(35);      
+   
+            HSSFRow rowhead = sheet.createRow((short)0);
+   
+HSSFFont font_Layout =workbook.createFont() 
+font_Layout.setColor(IndexedColors.WHITE.getIndex()) 
+font_Layout.setBold(true);
+HSSFCellStyle style_Layout = workbook.createCellStyle(); // 47, 117,181
+style_Layout.setFillForegroundColor(IndexedColors.ROYAL_BLUE .getIndex());
+style_Layout.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+font_Layout.setBold(true);
+font_Layout.setFontHeightInPoints((short)11); 
+style_Layout.setBottomBorderColor(IndexedColors.RED.getIndex());
+style_Layout.setFont(font_Layout);
+style_Layout.setVerticalAlignment(VerticalAlignment.TOP);
+
+HSSFCell Cell_TestCase=rowhead.createCell(0);
+Cell_TestCase.setCellStyle(style_Layout);
+Cell_TestCase.setCellValue("TestCase"); 
+
+HSSFCell Cell_SingleDetectionhttpStatus=rowhead.createCell(1);
+Cell_SingleDetectionhttpStatus.setCellStyle(style_Layout);
+Cell_SingleDetectionhttpStatus.setCellValue("HTTPSCODE_SingleDetection"); 
+
+HSSFCell Cell_GetLanguagesListhttpnStatus=rowhead.createCell(2);
+Cell_GetLanguagesListhttpnStatus.setCellStyle(style_Layout);
+Cell_GetLanguagesListhttpnStatus.setCellValue("HTTPSCODE_GetLanguagesList"); 
+
+HSSFCell Cell_Result=rowhead.createCell(3);
+Cell_Result.setCellStyle(style_Layout);
+Cell_Result.setCellValue("AttributesComparisonRESULT"); 
+
+HSSFCell Cell_PASS_FAIL=rowhead.createCell(4);
+Cell_PASS_FAIL.setCellStyle(style_Layout);
+Cell_PASS_FAIL.setCellValue("PASS_FAIL"); 
+
+HSSFCell Cell_SDResponsetime=rowhead.createCell(5);
+Cell_SDResponsetime.setCellStyle(style_Layout);
+Cell_SDResponsetime.setCellValue("SingleDetectionResponseTimeinMilliSeconds"); 
+
+HSSFCell Cell_SDPayLoadRequest=rowhead.createCell(6);
+Cell_SDPayLoadRequest.setCellStyle(style_Layout);
+Cell_SDPayLoadRequest.setCellValue("PayLoadRequest"); 
+
+HSSFCell Cell_SDResponse=rowhead.createCell(7);
+Cell_SDResponse.setCellStyle(style_Layout);
+Cell_SDResponse.setCellValue("SingleDetectionResponse"); 
+
+             FileOutputStream fileOut = new FileOutputStream(filename);
+            workbook.write(fileOut);
+            fileOut.close();
+            workbook.close();
+            log.info("Your excel file has been generated!");
+
+        } catch ( Exception ex ) {
+           log.info(ex);
+        }</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Test Data" id="6f5f239c-5f0e-4141-9cd9-c62a025da83c">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration><check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Empty String in the request parameter</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>TestCaseName</con:property>
+          <con:property>Text</con:property>
+          <con:property>Language</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="PostSingleDetection" id="df72c5de-0f15-4aee-8793-f1e76b4e60f3">
+        <con:settings/>
+        <con:config service="SingleDetection" resourcePath="/0.2/detect" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="PostSingleDetection" id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:preemptive>true</con:preemptive>
+              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="q" value="${Test Data#Text}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>q</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetLanguagesList" id="13bb63e4-cb87-4a4f-af7d-0c355ab83f77">
+        <con:settings/>
+        <con:config service="GetLanguagesList" resourcePath="/0.2/languages" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetLanguagesList" id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
+              <con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Extracting &amp; Comparing from Get Response &amp; Payload" id="c99276f1-1079-47d9-ba90-6fd335dfe59c">
+        <con:settings/>
+        <con:config>
+          <script>import  java.io.*;
+import jxl.* ; 
+import jxl.write.* ; 
+import java.io.BufferedWriter; 
+import java.io.File; 
+import java.io.FileWriter; 
+import java.io.IOException;
+import java.io.Writer;
+import java.text.SimpleDateFormat;  
+import java.util.Date; 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import org.apache.poi.hssf.usermodel.*;
+import  org.apache.poi.hssf.usermodel.HSSFSheet;
+import  org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import  org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle; 
+import org.apache.poi.hssf.usermodel.HSSFFont; 
+import org.apache.poi.ss.usermodel.ClientAnchor;
+import org.apache.poi.ss.usermodel.CreationHelper;
+import org.apache.poi.ss.usermodel.Drawing;
+import org.apache.poi.ss.usermodel.Picture;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.util.IOUtils
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle; 
+import org.apache.poi.hssf.usermodel.HSSFFont; 
+import org.apache.poi.ss.usermodel.IndexedColors; 
+import groovy.json.JsonSlurper
+
+//------------------------------------------------------Payload input--------------------------------------------------------//
+def text = context.expand( '${Test Data#Text}' )
+def language = context.expand( '${Test Data#Language}' )
+
+
+//------------------------------------------------------PostSingleDetection--------------------------------------------------------//
+def response = context.expand( '${PostSingleDetection#Response#$[\'data\']}' )
+
+def slurper = new JsonSlurper()
+def json = slurper.parseText(response)
+
+
+def testCaseName = context.expand( '${Test Data#TestCaseName}' )
+log.info( "testCaseName is :"+testCaseName);
+String HTTPSCODE_SingleDetection= testRunner.testCase.getTestStepByName("PostSingleDetection").httpRequest.response.responseHeaders["#status#"]
+log.info("HTTPSCODE_SingleDetection" + HTTPSCODE_SingleDetection)
+String HTTPSCODE_GetLanguagesList = testRunner.testCase.getTestStepByName("GetLanguagesList").httpRequest.response.responseHeaders["#status#"]
+log.info("HTTPSCODE_GetLanguagesList" + HTTPSCODE_GetLanguagesList)
+def SingleDetectionResponseTimeinMilliSeconds =  testRunner.testCase.testSteps["PostSingleDetection"].testRequest.response.timeTaken
+log.info ("Time taken  in ms is " + SingleDetectionResponseTimeinMilliSeconds);
+def PayLoadRequest = context.expand( '${PostSingleDetection#RawRequest}' )
+log.info ("PayLoadRequest is " + PayLoadRequest);
+def SingleDetectionResponse = context.expand( '${PostSingleDetection#ResponseAsXml}' )
+log.info ("SingleDetectionResponse is " + SingleDetectionResponse);
+
+//ComparingJSONwithMDM
+
+String ComparisonRESULT = context.expand( '${Properties#Failed Respose}' )
+log.info("FinalResult" + ComparisonRESULT)
+String PASS_FAIL = context.expand( '${Properties#Fail}' )
+log.info("TestCase  is " + PASS_FAIL)
+
+if(HTTPSCODE_SingleDetection.toString() =="[HTTP/1.1 200 OK]" &amp;&amp; (HTTPSCODE_SingleDetection.toString()).isEmpty() )
+{
+	
+}
+else 
+{
+	PASS_FAIL = context.expand( '${Properties#Fail}' )
+	log.info("TestCase is " + PASS_FAIL)
+}
+
+
+//-------writing output  to report-----------//
+
+String filename =  testRunner.testCase.getTestStepByName("Properties").getPropertyValue("ReportFile"); 
+
+try 
+{
+            FileInputStream fileInputStream = new FileInputStream(filename);
+            HSSFWorkbook workbook = new HSSFWorkbook(fileInputStream);
+            HSSFSheet sheet = workbook.getSheet("TestReport");  
+
+
+           
+int rowTNo=sheet.getPhysicalNumberOfRows();	
+log.info(	rowTNo);
+
+HSSFRow rowT0 = sheet.createRow((Short)rowTNo.toInteger() );
+//rowTNo=rowTNo+1;
+rowT0.createCell(0).setCellValue(testCaseName ); 
+rowT0.createCell(1).setCellValue(HTTPSCODE_SingleDetection ); 
+rowT0.createCell(2).setCellValue(HTTPSCODE_GetLanguagesList ); 
+rowT0.createCell(3).setCellValue(ComparisonRESULT ); 
+rowT0.createCell(4).setCellValue(PASS_FAIL ); 
+rowT0.createCell(5).setCellValue(SingleDetectionResponseTimeinMilliSeconds ); 
+rowT0.createCell(6).setCellValue(PayLoadRequest ); 
+rowT0.createCell(7).setCellValue(SingleDetectionResponse ); 
+
+            FileOutputStream fileOut = new FileOutputStream(filename);
+            workbook.write(fileOut);
+            fileOut.close();
+            workbook.close();
+            log.info("Your excel file has been generated!");
+
+        } catch ( Exception ex )
+        {
+           log.info(ex);
+        }</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="e0de8ba2-9d8d-450f-ac91-167ee41e291c">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Test Data</dataSourceStep>
+          <targetStep>PostSingleDetection</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>

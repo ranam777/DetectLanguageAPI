@@ -1,0 +1,11 @@
+GetLanguagesList\languages.xml
+SingleDetection\detect.xml
+AccountStatus\status.xml
+BatchDetection\detect.xml
+SingleDetection_Postive%26Negative\Positive_Valid-Request-with-a-string-in-single-language.xml
+SingleDetection_Postive%26Negative\Positive_Valid-Request-with-a-string-in-Multiple-language.xml
+SingleDetection_Postive%26Negative\Negative_Empty-String-in-the-request-parameter.xml
+SingleDetection_Postive%26Negative\Negative_Invalid-Parameter-Type-%28Sending-Special-characters-or-numbers%29.xml
+SingleDetection_Postive%26Negative\Negative_No-Parameter-Provided_Not-Throwing-Error.xml
+SingleDetection_Postive%26Negative\Negative_Authentication-is-missing-or-wrong-Authentication-API-Key.xml
+BatchDetection_Positive%26Negative\Positive_Valid-Request-with-a-string-in-Multiple-language.xml

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="c1aca830-a2e4-4ec2-9f2f-babf6859630c" name="BatchDetection_Positive&amp;Negative" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings id="fb68672d-76e9-4cce-8425-54103d421c78"><con:setting id="c1aca830-a2e4-4ec2-9f2f-babf6859630cfileName">BatchDetection_Positive%26Negative</con:setting></con:settings>
+    <con:runType>SEQUENTIAL</con:runType>
+    
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>

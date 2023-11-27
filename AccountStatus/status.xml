@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="status" path="/0.2/user/status" id="a463868f-6a13-48d6-a5f3-ae21d8d0685a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="97589c92-1c8a-4994-aec0-db231c54f6d3"><con:setting id="a463868f-6a13-48d6-a5f3-ae21d8d0685afileName">status</con:setting></con:settings>
+      <con:parameters/>
+      <con:method name="Method 1" id="590dada7-bf0b-4d73-a9e9-005616f293d8" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="72133d25-b376-4da7-9d3c-02b2d95d58bb" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://ws.detectlanguage.com/0.2/user/status</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
