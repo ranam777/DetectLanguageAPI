@@ -16,7 +16,6 @@ jobs:
         run: |
           # Run your ReadyAPI tests here
           # Example command:
-          readyapi.sh -f /DetectLanguageAPI/SingleDetection_Postive%26Negative
-/Negative_Authentication-is-missing-or-wrong-Authentication-API-Key.xml -R "JUnit-Style HTML Report" -O "/path/to/output/folder"
+          readyapi.sh -f /DetectLanguageAPI/SingleDetection_Postive%26Negative/Negative_Authentication-is-missing-or-wrong-Authentication-API-Key.xml -R "JUnit-Style HTML Report" -O "/path/to/output/folder"
 
       # You might want to add steps to upload test reports, artifacts, etc.
