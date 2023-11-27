@@ -34,4 +34,6 @@ jobs:
 
       - name: Run ReadyAPI tests
         run: |
-          /path/to/ReadyAPI/bin/testrunner.sh -s"DetectLanguageAPI" -c"Negative_Authentication is missing or wrong Authentication API Key" -r"results"
+         find /path/to/ReadyAPI -name testrunner.sh
+         # Or
+         ls /path/to/ReadyAPI/**/testrunner.sh -s"DetectLanguageAPI" -c"Negative_Authentication is missing or wrong Authentication API Key" -r"results"
