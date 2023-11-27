@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Download and install ReadyAPI
         run: |
-          wget -O ReadyAPI.tar.gz https://smartbear.com/product/ready-api/free-trial/thank-you/?fid=91&id=R834323147438SLM tar -xzf ReadyAPI.tar.gz -C /desired/installation/path
+          wget -O ReadyAPI.tar.gz https://smartbear.com/product/ready-api/free-trial/thank-you/?fid=91&id=R834323147438SLM ReadyAPI.tar.gz -C /desired/installation/path
 
       - name: Run ReadyAPI tests
         run: |
