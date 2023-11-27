@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Run ReadyAPI tests
 
 # Controls when the workflow will run
 on:
@@ -34,4 +34,4 @@ jobs:
 
       - name: Run ReadyAPI tests
         run: |
-         ls /path/to/ReadyAPI/**/testrunner.sh -s"DetectLanguageAPI" -c"Negative_Authentication is missing or wrong Authentication API Key" -r"results"
+         /path/to/ReadyAPI/**/testrunner.sh -s"DetectLanguageAPI" -c"Negative_Authentication is missing or wrong Authentication API Key" -r"results"
