@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xsi:type="con:RestService" id="720ff470-4edd-47e0-ac19-a14467b610d3" name="AccountStatus" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="b9e5bc99-67f7-48a8-a5d4-46100d0160a7"><con:setting id="720ff470-4edd-47e0-ac19-a14467b610d3fileName">AccountStatus</con:setting></con:settings>
+    <con:settings id="ba53f0e7-a7fb-44bd-9b5e-4cc2f125daed"><con:setting id="720ff470-4edd-47e0-ac19-a14467b610d3fileName">AccountStatus</con:setting></con:settings>
     <con:definitionCache type="TEXT" rootPart="AccountStatus.json">
       <con:part>
         <con:url>AccountStatus.json</con:url>

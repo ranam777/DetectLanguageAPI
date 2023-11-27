@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xsi:type="con:RestService" id="77c8ddf7-e610-4d22-959a-9db94c513a55" name="BatchDetection" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="15ab6e14-7f0c-4a33-9464-957b657582ad"><con:setting id="77c8ddf7-e610-4d22-959a-9db94c513a55fileName">BatchDetection</con:setting></con:settings>
+    <con:settings id="f108647a-f84d-42f0-af05-e9cd39a2573a"><con:setting id="77c8ddf7-e610-4d22-959a-9db94c513a55fileName">BatchDetection</con:setting></con:settings>
     <con:definitionCache type="TEXT" rootPart="BatchDetection.json">
       <con:part>
         <con:url>BatchDetection.json</con:url>
