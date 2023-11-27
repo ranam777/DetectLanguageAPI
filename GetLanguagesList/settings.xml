@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xsi:type="con:RestService" id="10e984d6-21dc-4a6a-8923-09edace54f86" name="GetLanguagesList" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="f9b33547-5319-432f-84ae-d736bba6a8f3"><con:setting id="10e984d6-21dc-4a6a-8923-09edace54f86fileName">GetLanguagesList</con:setting></con:settings>
+    <con:settings id="13e06e72-f7a2-493d-902c-81af31be9b51"><con:setting id="10e984d6-21dc-4a6a-8923-09edace54f86fileName">GetLanguagesList</con:setting></con:settings>
     <con:definitionCache type="TEXT" rootPart="GetLanguagesList.json">
       <con:part>
         <con:url>GetLanguagesList.json</con:url>

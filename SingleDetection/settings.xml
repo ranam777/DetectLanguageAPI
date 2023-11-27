@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xsi:type="con:RestService" id="4434c9e9-4557-45c9-8df6-a5883b1ead65" name="SingleDetection" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="0fcb6967-4a88-425f-aa7b-21ea898d887a"><con:setting id="4434c9e9-4557-45c9-8df6-a5883b1ead65fileName">SingleDetection</con:setting></con:settings>
+    <con:settings id="25c144e9-5b45-4295-879d-290b6915d2fa"><con:setting id="4434c9e9-4557-45c9-8df6-a5883b1ead65fileName">SingleDetection</con:setting></con:settings>
     <con:definitionCache type="TEXT" rootPart="SingleDetection.json">
       <con:part>
         <con:url>SingleDetection.json</con:url>
