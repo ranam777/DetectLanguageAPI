@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="8aef535e-5433-443d-9ce9-f84a36e0c61a" name="languages" path="/0.2/languages" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="8aef535e-5433-443d-9ce9-f84a36e0c61a" name="languages" path="/0.2/languages" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
       <con:settings id="da659ef3-39c5-440c-abf4-1724e3cdb279"><con:setting id="8aef535e-5433-443d-9ce9-f84a36e0c61afileName">languages</con:setting></con:settings><con:parameters/><con:method id="c9711365-7556-4a59-9a3b-5c3463796aec" method="GET" name="Method 1">
         <con:settings/><con:parameters/><con:request id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json" name="Request 1">
           <con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="c368e9f4-a321-480e-8f87-bc07eafa8558" name="detect" path="/0.2/detect" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="c368e9f4-a321-480e-8f87-bc07eafa8558" name="detect" path="/0.2/detect" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
       <con:settings id="4cf58562-1adf-423c-a808-17a309a58622"><con:setting id="c368e9f4-a321-480e-8f87-bc07eafa8558fileName">detect</con:setting></con:settings><con:parameters/><con:method id="d91376b7-76d0-418d-a6f6-e696e40cf5de" method="POST" name="Method 1">
         <con:settings/><con:parameters>
           <con:parameter required="true">
