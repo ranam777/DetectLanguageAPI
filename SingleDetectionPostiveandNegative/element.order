@@ -1,4 +1,4 @@
-Positive_Valid-Request-with-a-string-in-single-language.xml
+PositiveValidRequestwithastringinsinglelanguage.xml
 Positive_Valid-Request-with-a-string-in-Multiple-language.xml
 Negative_Empty-String-in-the-request-parameter.xml
 Negative_Invalid-Parameter-Type-%28Sending-Special-characters-or-numbers%29.xml
