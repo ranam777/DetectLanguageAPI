@@ -27,6 +27,6 @@ jobs:
     
       - name: Ready_API_Test_Updt
         working-directory: 'C:\Users\eatcsud\AppData\Local\Programs\SmartBear\ReadyAPI-3.49.0\bin>'
-        run: 'C:\Users\eatcsud\AppData\Local\Programs\SmartBear\ReadyAPI-3.49.0\bin\testrunner.bat -sSingleDetectionPostiveandNegative -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" C:\Ranam_Srinivas\Detect-Language-API-readyapi-project'
+        run: '.\testrunner.bat -sSingleDetectionPostiveandNegative -r -a -j -f${WORKSPACE} "-RJUnit-Style HTML Report" -FXML "-EDefault environment" C:\Ranam_Srinivas\Detect-Language-API-readyapi-project'
 
      
