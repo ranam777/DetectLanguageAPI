@@ -1,13 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:testSuite id="5de7baaa-8bde-4cac-95a7-8d1c43920040" name="SingleDetectionPostiveandNegative" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="93ecc9d0-6639-4a3e-8040-fba96b4ff8a3"><con:setting id="5de7baaa-8bde-4cac-95a7-8d1c43920040fileName">SingleDetectionPostiveandNegative</con:setting></con:settings>
-    <con:runType>SEQUENTIAL</con:runType>
-    
-    
-    
-    
-    
-    
-    <con:properties/>
-    <con:reportParameters/>
-  </con:testSuite>
+    <con:settings id="de0c3d7d-d9bc-49e1-8b04-7981b95218ad"><con:setting id="5de7baaa-8bde-4cac-95a7-8d1c43920040fileName">SingleDetectionPostiveandNegative</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

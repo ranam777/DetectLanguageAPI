@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="detect" path="/0.2/detect" id="605b2735-1555-4675-ad33-9ef52327423b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="b35a6dd3-9080-4ed1-ab06-0c28d447dc5e"><con:setting id="605b2735-1555-4675-ad33-9ef52327423bfileName">detect</con:setting></con:settings>
-      <con:parameters/>
-      <con:method name="Method 1" id="6086575b-82e4-4976-b758-762b36f4eb7b" method="POST">
-        <con:settings/>
-        <con:parameters/>
-        <con:request name="Request 1" id="49e03e64-7396-471a-86b2-2c9d241e75ff" mediaType="application/json" postQueryString="false">
+<con:resource id="605b2735-1555-4675-ad33-9ef52327423b" name="detect" path="/0.2/detect" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="57a1443d-1c17-457e-97a0-fc5c9ed604c0"><con:setting id="605b2735-1555-4675-ad33-9ef52327423bfileName">detect</con:setting></con:settings><con:parameters/><con:method id="6086575b-82e4-4976-b758-762b36f4eb7b" method="POST" name="Method 1">
+        <con:settings/><con:parameters/><con:request id="49e03e64-7396-471a-86b2-2c9d241e75ff" mediaType="application/json" name="Request 1" postQueryString="false">
           <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
-          </con:settings>
-          <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-          <con:request>{
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request>{
     "q": [
         "Hello world",
         "Buenos dias señor"
     ]
-}</con:request>
-          <con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri>
-          <con:credentials>
-            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-            <con:authType>No Authorization</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:parameters/>
-          <con:parameterOrder/>
-        </con:request>
-      </con:method>
-    </con:resource>
+}</con:request><con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri><con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource>

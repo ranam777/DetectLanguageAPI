@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="10e984d6-21dc-4a6a-8923-09edace54f86" name="GetLanguagesList" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="f11ab451-99a2-4471-a318-ba0b195dda66"><con:setting id="10e984d6-21dc-4a6a-8923-09edace54f86fileName">GetLanguagesList</con:setting></con:settings>
-    <con:definitionCache type="TEXT" rootPart="GetLanguagesList.json">
+<con:interface xsi:type="con:RestService" id="10e984d6-21dc-4a6a-8923-09edace54f86" name="GetLanguagesList" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="629ae1ff-c4db-4f82-a64f-faa036f99d11"><con:setting id="10e984d6-21dc-4a6a-8923-09edace54f86fileName">GetLanguagesList</con:setting></con:settings><con:definitionCache rootPart="GetLanguagesList.json" type="TEXT">
       <con:part>
-        <con:url>GetLanguagesList.json</con:url>
-        <con:content>{"openapi":"3.0.1","info":{"title":"GetLanguagesList","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/languages":{"get":{"responses":{"default":{"description":"Default response"}}}}}}</con:content>
-        <con:type>https://swagger.io/openapiv3/specification</con:type>
-      </con:part>
-    </con:definitionCache>
-    <con:endpoints>
-      <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-    </con:endpoints>
-    
-  </con:interface>
+        <con:url>GetLanguagesList.json</con:url><con:content>{"openapi":"3.0.1","info":{"title":"GetLanguagesList","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/languages":{"get":{"responses":{"default":{"description":"Default response"}}}}}}</con:content><con:type>https://swagger.io/openapiv3/specification</con:type></con:part></con:definitionCache><con:endpoints>
+      <con:endpoint>https://ws.detectlanguage.com</con:endpoint></con:endpoints></con:interface>

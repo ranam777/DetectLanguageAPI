@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="4434c9e9-4557-45c9-8df6-a5883b1ead65" name="SingleDetection" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="634fc8fe-997a-4feb-90c6-b77466ddda87"><con:setting id="4434c9e9-4557-45c9-8df6-a5883b1ead65fileName">SingleDetection</con:setting></con:settings>
-    <con:definitionCache type="TEXT" rootPart="SingleDetection.json">
+<con:interface xsi:type="con:RestService" id="4434c9e9-4557-45c9-8df6-a5883b1ead65" name="SingleDetection" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="fa0bcb70-8523-47b0-a091-b59806b82697"><con:setting id="4434c9e9-4557-45c9-8df6-a5883b1ead65fileName">SingleDetection</con:setting></con:settings><con:definitionCache rootPart="SingleDetection.json" type="TEXT">
       <con:part>
-        <con:url>SingleDetection.json</con:url>
-        <con:content>{"openapi":"3.0.1","info":{"title":"SingleDetection","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/detect":{"description":"","post":{"description":"","parameters":[{"name":"q","in":"query","required":true,"schema":{"type":"string"}}],"requestBody":{"content":{"application/x-www-form-urlencoded":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
-        <con:type>https://swagger.io/openapiv3/specification</con:type>
-      </con:part>
-    </con:definitionCache>
-    <con:endpoints>
-      <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-    </con:endpoints>
-    
-  </con:interface>
+        <con:url>SingleDetection.json</con:url><con:content>{"openapi":"3.0.1","info":{"title":"SingleDetection","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/detect":{"description":"","post":{"description":"","parameters":[{"name":"q","in":"query","required":true,"schema":{"type":"string"}}],"requestBody":{"content":{"application/x-www-form-urlencoded":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content><con:type>https://swagger.io/openapiv3/specification</con:type></con:part></con:definitionCache><con:endpoints>
+      <con:endpoint>https://ws.detectlanguage.com</con:endpoint></con:endpoints></con:interface>

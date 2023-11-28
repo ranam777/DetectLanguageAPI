@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="720ff470-4edd-47e0-ac19-a14467b610d3" name="AccountStatus" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="ba53f0e7-a7fb-44bd-9b5e-4cc2f125daed"><con:setting id="720ff470-4edd-47e0-ac19-a14467b610d3fileName">AccountStatus</con:setting></con:settings>
-    <con:definitionCache type="TEXT" rootPart="AccountStatus.json">
+<con:interface xsi:type="con:RestService" id="720ff470-4edd-47e0-ac19-a14467b610d3" name="AccountStatus" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="4d7dd647-cb65-40e4-b70f-e8e1e6906399"><con:setting id="720ff470-4edd-47e0-ac19-a14467b610d3fileName">AccountStatus</con:setting></con:settings><con:definitionCache rootPart="AccountStatus.json" type="TEXT">
       <con:part>
-        <con:url>AccountStatus.json</con:url>
-        <con:content>{"openapi":"3.0.1","info":{"title":"AccountStatus","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/user/status":{"get":{"responses":{"default":{"description":"Default response"}}}}}}</con:content>
-        <con:type>https://swagger.io/openapiv3/specification</con:type>
-      </con:part>
-    </con:definitionCache>
-    <con:endpoints>
-      <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-    </con:endpoints>
-    
-  </con:interface>
+        <con:url>AccountStatus.json</con:url><con:content>{"openapi":"3.0.1","info":{"title":"AccountStatus","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/user/status":{"get":{"responses":{"default":{"description":"Default response"}}}}}}</con:content><con:type>https://swagger.io/openapiv3/specification</con:type></con:part></con:definitionCache><con:endpoints>
+      <con:endpoint>https://ws.detectlanguage.com</con:endpoint></con:endpoints></con:interface>

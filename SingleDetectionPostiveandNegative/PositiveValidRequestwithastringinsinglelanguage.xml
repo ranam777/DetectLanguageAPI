@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="ddf061ac-9079-4a7d-b485-e68be243ed96" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PositiveValidRequestwithastringinsinglelanguage" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="f92b5597-ee7d-4b41-ae1f-e6929b66ca79"><con:setting id="ddf061ac-9079-4a7d-b485-e68be243ed96fileName">PositiveValidRequestwithastringinsinglelanguage</con:setting></con:settings>
-      <con:testStep type="properties" name="Properties" id="c05654d1-d9d4-4e8d-a525-1155b8cdd969">
-        <con:settings/>
-        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="ddf061ac-9079-4a7d-b485-e68be243ed96" keepSession="false" name="PositiveValidRequestwithastringinsinglelanguage" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="29a5507d-4e2b-47bc-b5c9-eed1025581a5"><con:setting id="ddf061ac-9079-4a7d-b485-e68be243ed96fileName">PositiveValidRequestwithastringinsinglelanguage</con:setting></con:settings><con:testStep id="c05654d1-d9d4-4e8d-a525-1155b8cdd969" name="Properties" type="properties">
+        <con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:properties>
             <con:property>
-              <con:name>ReportFile</con:name>
-              <con:value>H:\Srinivas\Personal Project\New folder\Detect-Language-API-readyapi-project.xml/../AutomationReports\SingleDetection_Positive_Valid Request with a single language_TestReportFile _2023-11-27-14-40-58.xls</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Final Result</con:name>
-              <con:value>Values are Matching in the Comparison</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Issue Result</con:name>
-              <con:value>Values are not Matching in the Comparison</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Pass</con:name>
-              <con:value>PASS</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Fail</con:name>
-              <con:value>Fail</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Failed Respose</con:name>
-              <con:value>Response is other than 200</con:value>
-            </con:property>
-          </con:properties>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="groovy" name="Create Report Template" id="6cbc726e-6bc6-4167-b633-8093082d5ea0">
-        <con:settings/>
-        <con:config>
+              <con:name>ReportFile</con:name><con:value>H:\Srinivas\Personal Project\New folder\Detect-Language-API-readyapi-project.xml/../AutomationReports\SingleDetection_Positive_Valid Request with a single language_TestReportFile _2023-11-27-14-40-58.xls</con:value></con:property><con:property>
+              <con:name>Final Result</con:name><con:value>Values are Matching in the Comparison</con:value></con:property><con:property>
+              <con:name>Issue Result</con:name><con:value>Values are not Matching in the Comparison</con:value></con:property><con:property>
+              <con:name>Pass</con:name><con:value>PASS</con:value></con:property><con:property>
+              <con:name>Fail</con:name><con:value>Fail</con:value></con:property><con:property>
+              <con:name>Failed Respose</con:name><con:value>Response is other than 200</con:value></con:property></con:properties></con:config></con:testStep><con:testStep id="6cbc726e-6bc6-4167-b633-8093082d5ea0" name="Create Report Template" type="groovy">
+        <con:settings/><con:config>
           <script>import  java.io.*;
 import jxl.* ; 
 import jxl.write.* ; 
@@ -152,87 +128,29 @@ Cell_SDResponse.setCellValue("SingleDetectionResponse");
         } catch ( Exception ex ) {
            log.info(ex);
         }</script>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="datasource" name="Test Data" id="460bc8c5-cde8-46e8-9e3f-f85911546fb5">
-        <con:settings/>
-        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        </con:config></con:testStep><con:testStep id="460bc8c5-cde8-46e8-9e3f-f85911546fb5" name="Test Data" type="datasource">
+        <con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Grid">
-            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Valid Request with a string in English</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Hello World</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">English</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Valid Request with a string in Telugu</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">నమస్కారం</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Telugu</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Valid Request with a string in Chinese</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">喜欢</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Chinese Simplified</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
-          </con:dataSource>
-          <con:shared>true</con:shared>
-          <con:restartShared>true</con:restartShared>
-          <con:property>TestCaseName</con:property>
-          <con:property>Text</con:property>
-          <con:property>Language</con:property>
-          <con:restartOnRun>true</con:restartOnRun>
-          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="restrequest" name="PostSingleDetection" id="de3c0370-dbc0-4954-81a6-cc02eb8808a5">
-        <con:settings/>
-        <con:config service="SingleDetection" resourcePath="/0.2/detect" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="PostSingleDetection" id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Valid Request with a string in English</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Hello World</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">English</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Valid Request with a string in Telugu</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">నమస్కారం</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Telugu</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Valid Request with a string in Chinese</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">喜欢</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Chinese Simplified</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseName</con:property><con:property>Text</con:property><con:property>Language</con:property><con:restartOnRun>true</con:restartOnRun><con:stopDatasourceExhausted>false</con:stopDatasourceExhausted></con:config></con:testStep><con:testStep id="de3c0370-dbc0-4954-81a6-cc02eb8808a5" name="PostSingleDetection" type="restrequest">
+        <con:settings/><con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/0.2/detect" service="SingleDetection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" name="PostSingleDetection" postQueryString="true">
             <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
-            </con:settings>
-            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-            <con:request/>
-            <con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri><con:assertion id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+              <con:settings/><con:configuration>
                 <codes>200</codes>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-              <con:preemptive>true</con:preemptive>
-              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:authType>No Authorization</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters>
-              <con:entry key="q" value="${Test Data#Text}"/>
-            </con:parameters>
-            <con:parameterOrder>
-              <con:entry>q</con:entry>
-            </con:parameterOrder>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="restrequest" name="GetLanguagesList" id="3b3a9a86-a0aa-463a-9f79-97d3601f5620">
-        <con:settings/>
-        <con:config service="GetLanguagesList" resourcePath="/0.2/languages" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="GetLanguagesList" id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json">
+              </con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:preemptive>true</con:preemptive><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+              <con:entry key="q" value="${Test Data#Text}"/></con:parameters><con:parameterOrder>
+              <con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep id="3b3a9a86-a0aa-463a-9f79-97d3601f5620" name="GetLanguagesList" type="restrequest">
+        <con:settings/><con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/0.2/languages" service="GetLanguagesList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json" name="GetLanguagesList">
             <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-            </con:settings>
-            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-            <con:request/>
-            <con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri><con:assertion id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+              <con:settings/><con:configuration>
                 <codes>200</codes>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes>
-              <con:authType>No Authorization</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters/>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="groovy" name="Extracting &amp; Comparing from Get Response &amp; Payload" id="3636fc78-9588-467d-946f-ca6720b7eccf">
-        <con:settings/>
-        <con:config>
+              </con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep id="3636fc78-9588-467d-946f-ca6720b7eccf" name="Extracting &amp; Comparing from Get Response &amp; Payload" type="groovy">
+        <con:settings/><con:config>
           <script><![CDATA[import  java.io.*;
 import jxl.* ; 
 import jxl.write.* ; 
@@ -367,16 +285,9 @@ rowT0.createCell(7).setCellValue(SingleDetectionResponse );
         {
            log.info(ex);
         }]]></script>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="datasourceloop" name="Data Source Loop" id="6690ffff-e2e0-4bc9-a9a8-200e5e51c8c1">
-        <con:settings/>
-        <con:config>
+        </con:config></con:testStep><con:testStep id="6690ffff-e2e0-4bc9-a9a8-200e5e51c8c1" name="Data Source Loop" type="datasourceloop">
+        <con:settings/><con:config>
           <dataSourceStep>Test Data</dataSourceStep>
           <targetStep>PostSingleDetection</targetStep>
           <discardResults>true</discardResults>
-        </con:config>
-      </con:testStep>
-      <con:properties/>
-      <con:reportParameters/>
-    </con:testCase>
+        </con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

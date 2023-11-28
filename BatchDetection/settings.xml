@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="77c8ddf7-e610-4d22-959a-9db94c513a55" name="BatchDetection" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-    <con:settings id="f108647a-f84d-42f0-af05-e9cd39a2573a"><con:setting id="77c8ddf7-e610-4d22-959a-9db94c513a55fileName">BatchDetection</con:setting></con:settings>
-    <con:definitionCache type="TEXT" rootPart="BatchDetection.json">
+<con:interface xsi:type="con:RestService" id="77c8ddf7-e610-4d22-959a-9db94c513a55" name="BatchDetection" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="b84fa980-dea6-4790-9b08-4462863e9e39"><con:setting id="77c8ddf7-e610-4d22-959a-9db94c513a55fileName">BatchDetection</con:setting></con:settings><con:definitionCache rootPart="BatchDetection.json" type="TEXT">
       <con:part>
-        <con:url>BatchDetection.json</con:url>
-        <con:content>{"openapi":"3.0.1","info":{"title":"BatchDetection","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/detect":{"description":"","post":{"description":"","requestBody":{"content":{"application/json":{"example":"{\n    \"q\": [\n        \"Hello world\",\n        \"Buenos dias señor\"\n    ]\n}"}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
-        <con:type>https://swagger.io/openapiv3/specification</con:type>
-      </con:part>
-    </con:definitionCache>
-    <con:endpoints>
-      <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-    </con:endpoints>
-    
-  </con:interface>
+        <con:url>BatchDetection.json</con:url><con:content>{"openapi":"3.0.1","info":{"title":"BatchDetection","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/0.2/detect":{"description":"","post":{"description":"","requestBody":{"content":{"application/json":{"example":"{\n    \"q\": [\n        \"Hello world\",\n        \"Buenos dias señor\"\n    ]\n}"}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content><con:type>https://swagger.io/openapiv3/specification</con:type></con:part></con:definitionCache><con:endpoints>
+      <con:endpoint>https://ws.detectlanguage.com</con:endpoint></con:endpoints></con:interface>

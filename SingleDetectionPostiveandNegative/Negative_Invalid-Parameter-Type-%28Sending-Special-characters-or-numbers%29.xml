@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="25f94aed-3f6e-4c25-9845-51427293ae9f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Negative_Invalid Parameter Type (Sending Special characters or numbers)" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="4259568e-655f-4d17-a025-2fc225234e69"><con:setting id="25f94aed-3f6e-4c25-9845-51427293ae9ffileName">Negative_Invalid-Parameter-Type-%28Sending-Special-characters-or-numbers%29</con:setting></con:settings>
-      <con:testStep type="properties" name="Properties" id="6f40b697-e702-4816-b158-5afed2899fa6">
-        <con:settings/>
-        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="25f94aed-3f6e-4c25-9845-51427293ae9f" keepSession="false" name="Negative_Invalid Parameter Type (Sending Special characters or numbers)" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="9ccfbe98-0ac1-4da3-8bd5-24903ddac21b"><con:setting id="25f94aed-3f6e-4c25-9845-51427293ae9ffileName">Negative_Invalid-Parameter-Type-%28Sending-Special-characters-or-numbers%29</con:setting></con:settings><con:testStep id="6f40b697-e702-4816-b158-5afed2899fa6" name="Properties" type="properties">
+        <con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:properties>
             <con:property>
-              <con:name>ReportFile</con:name>
-              <con:value>H:\Srinivas\Personal Project\New folder\Detect-Language-API-readyapi-project.xml/../AutomationReports\SingleDetection_Negative_Invalid Parameter Type -Sending Special characters or numbers_TestReportFile _2023-11-27-14-43-14.xls</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Final Result</con:name>
-              <con:value>Values are Matching in the Comparison</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Issue Result</con:name>
-              <con:value>Values are not Matching in the Comparison</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Pass</con:name>
-              <con:value>PASS</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Fail</con:name>
-              <con:value>Fail</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Failed Respose</con:name>
-              <con:value>Response is 200 OK</con:value>
-            </con:property>
-          </con:properties>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="groovy" name="Create Report Template" id="66179b2b-48b9-4808-8305-b502243d8cc2">
-        <con:settings/>
-        <con:config>
+              <con:name>ReportFile</con:name><con:value>H:\Srinivas\Personal Project\New folder\Detect-Language-API-readyapi-project.xml/../AutomationReports\SingleDetection_Negative_Invalid Parameter Type -Sending Special characters or numbers_TestReportFile _2023-11-27-14-43-14.xls</con:value></con:property><con:property>
+              <con:name>Final Result</con:name><con:value>Values are Matching in the Comparison</con:value></con:property><con:property>
+              <con:name>Issue Result</con:name><con:value>Values are not Matching in the Comparison</con:value></con:property><con:property>
+              <con:name>Pass</con:name><con:value>PASS</con:value></con:property><con:property>
+              <con:name>Fail</con:name><con:value>Fail</con:value></con:property><con:property>
+              <con:name>Failed Respose</con:name><con:value>Response is 200 OK</con:value></con:property></con:properties></con:config></con:testStep><con:testStep id="66179b2b-48b9-4808-8305-b502243d8cc2" name="Create Report Template" type="groovy">
+        <con:settings/><con:config>
           <script>import  java.io.*;
 import jxl.* ; 
 import jxl.write.* ; 
@@ -152,87 +128,29 @@ Cell_SDResponse.setCellValue("SingleDetectionResponse");
         } catch ( Exception ex ) {
            log.info(ex);
         }</script>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="datasource" name="Test Data" id="2c1df362-33b5-4b2f-8fcc-57b319f6ae09">
-        <con:settings/>
-        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        </con:config></con:testStep><con:testStep id="2c1df362-33b5-4b2f-8fcc-57b319f6ae09" name="Test Data" type="datasource">
+        <con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Grid">
-            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid Parameter Type (numbers)</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1234</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid Parameter Type (Sending Special characters)</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">#?#¤&amp;</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
-          </con:dataSource>
-          <con:shared>true</con:shared>
-          <con:restartShared>true</con:restartShared>
-          <con:property>TestCaseName</con:property>
-          <con:property>Text</con:property>
-          <con:property>Language</con:property>
-          <con:restartOnRun>true</con:restartOnRun>
-          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="restrequest" name="PostSingleDetection" id="30a5161f-363d-4bfc-86a7-686f5e7ff9ad">
-        <con:settings/>
-        <con:config service="SingleDetection" resourcePath="/0.2/detect" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="PostSingleDetection" id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid Parameter Type (numbers)</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1234</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Invalid Parameter Type (Sending Special characters)</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">#?#¤&amp;</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseName</con:property><con:property>Text</con:property><con:property>Language</con:property><con:restartOnRun>true</con:restartOnRun><con:stopDatasourceExhausted>false</con:stopDatasourceExhausted></con:config></con:testStep><con:testStep id="30a5161f-363d-4bfc-86a7-686f5e7ff9ad" name="PostSingleDetection" type="restrequest">
+        <con:settings/><con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/0.2/detect" service="SingleDetection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" name="PostSingleDetection" postQueryString="true">
             <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
-            </con:settings>
-            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-            <con:request/>
-            <con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri><con:assertion id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+              <con:settings/><con:configuration>
                 <codes>200</codes>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-              <con:preemptive>true</con:preemptive>
-              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:authType>No Authorization</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters>
-              <con:entry key="q" value="${Test Data#Text}"/>
-            </con:parameters>
-            <con:parameterOrder>
-              <con:entry>q</con:entry>
-            </con:parameterOrder>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="restrequest" name="GetLanguagesList" id="b7b33950-55a7-45f7-83bf-b64e77fcc2e4">
-        <con:settings/>
-        <con:config service="GetLanguagesList" resourcePath="/0.2/languages" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="GetLanguagesList" id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json">
+              </con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:preemptive>true</con:preemptive><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+              <con:entry key="q" value="${Test Data#Text}"/></con:parameters><con:parameterOrder>
+              <con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep id="b7b33950-55a7-45f7-83bf-b64e77fcc2e4" name="GetLanguagesList" type="restrequest">
+        <con:settings/><con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/0.2/languages" service="GetLanguagesList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json" name="GetLanguagesList">
             <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-            </con:settings>
-            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-            <con:request/>
-            <con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri><con:assertion id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+              <con:settings/><con:configuration>
                 <codes>200</codes>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes>
-              <con:authType>No Authorization</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters/>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="groovy" name="Extracting &amp; Comparing from Get Response &amp; Payload" id="a3daab6d-917a-4e2d-b8cc-f0cf19ac78a9">
-        <con:settings/>
-        <con:config>
+              </con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep id="a3daab6d-917a-4e2d-b8cc-f0cf19ac78a9" name="Extracting &amp; Comparing from Get Response &amp; Payload" type="groovy">
+        <con:settings/><con:config>
           <script>import  java.io.*;
 import jxl.* ; 
 import jxl.write.* ; 
@@ -345,16 +263,9 @@ rowT0.createCell(7).setCellValue(SingleDetectionResponse );
         {
            log.info(ex);
         }</script>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="datasourceloop" name="Data Source Loop" id="303be7b7-87bb-46bd-9a5d-23d431e5c99c">
-        <con:settings/>
-        <con:config>
+        </con:config></con:testStep><con:testStep id="303be7b7-87bb-46bd-9a5d-23d431e5c99c" name="Data Source Loop" type="datasourceloop">
+        <con:settings/><con:config>
           <dataSourceStep>Test Data</dataSourceStep>
           <targetStep>PostSingleDetection</targetStep>
           <discardResults>true</discardResults>
-        </con:config>
-      </con:testStep>
-      <con:properties/>
-      <con:reportParameters/>
-    </con:testCase>
+        </con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

@@ -1,44 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="10cdb18b-bfb9-4622-9493-d1b6dbd402f0" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Negative_Authentication is missing or wrong Authentication API Key" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="01a873c7-2980-4643-87ab-98604cc9aa06"><con:setting id="10cdb18b-bfb9-4622-9493-d1b6dbd402f0fileName">Negative_Authentication-is-missing-or-wrong-Authentication-API-Key</con:setting></con:settings>
-      <con:testStep type="properties" name="Properties" id="9dabc4a3-a06c-4c26-984f-bcc21b55c676">
-        <con:settings/>
-        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="10cdb18b-bfb9-4622-9493-d1b6dbd402f0" keepSession="false" name="Negative_Authentication is missing or wrong Authentication API Key" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="9ea25c5d-24bc-44b0-aab8-ac3d2bc1cd5f"><con:setting id="10cdb18b-bfb9-4622-9493-d1b6dbd402f0fileName">Negative_Authentication-is-missing-or-wrong-Authentication-API-Key</con:setting></con:settings><con:testStep id="9dabc4a3-a06c-4c26-984f-bcc21b55c676" name="Properties" type="properties">
+        <con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:properties>
             <con:property>
-              <con:name>ReportFile</con:name>
-              <con:value>C:\Ranam_Srinivas\Detect-Language-API-readyapi-project/../AutomationReports\SingleDetection_Negative_Authentication is missing or wrong Authentication API Key _2023-11-27-20-33-42.xls</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Final Result</con:name>
-              <con:value>Values are Matching in the Comparison</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Issue Result</con:name>
-              <con:value>Values are not Matching in the Comparison</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Pass</con:name>
-              <con:value>PASS</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Fail</con:name>
-              <con:value>Fail</con:value>
-            </con:property>
-            <con:property>
-              <con:name>Failed Respose</con:name>
-              <con:value>Response is other than 401</con:value>
-            </con:property>
-            <con:property>
-              <con:name>ComparisonRESULT</con:name>
-              <con:value>Response is other than 401</con:value>
-            </con:property>
-          </con:properties>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="groovy" name="Create Report Template" id="236f79cf-4209-41ef-bb0a-8a9da33f1c0e">
-        <con:settings/>
-        <con:config>
+              <con:name>ReportFile</con:name><con:value>C:\Ranam_Srinivas\Detect-Language-API-readyapi-project/../AutomationReports\SingleDetection_Negative_Authentication is missing or wrong Authentication API Key _2023-11-27-20-33-42.xls</con:value></con:property><con:property>
+              <con:name>Final Result</con:name><con:value>Values are Matching in the Comparison</con:value></con:property><con:property>
+              <con:name>Issue Result</con:name><con:value>Values are not Matching in the Comparison</con:value></con:property><con:property>
+              <con:name>Pass</con:name><con:value>PASS</con:value></con:property><con:property>
+              <con:name>Fail</con:name><con:value>Fail</con:value></con:property><con:property>
+              <con:name>Failed Respose</con:name><con:value>Response is other than 401</con:value></con:property><con:property>
+              <con:name>ComparisonRESULT</con:name><con:value>Response is other than 401</con:value></con:property></con:properties></con:config></con:testStep><con:testStep id="236f79cf-4209-41ef-bb0a-8a9da33f1c0e" name="Create Report Template" type="groovy">
+        <con:settings/><con:config>
           <script>import  java.io.*;
 import jxl.* ; 
 import jxl.write.* ; 
@@ -156,87 +129,29 @@ Cell_SDResponse.setCellValue("SingleDetectionResponse");
         } catch ( Exception ex ) {
            log.info(ex);
         }</script>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="datasource" name="Test Data" id="60943d38-d4f3-41a5-9405-71fb8140bc9e">
-        <con:settings/>
-        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        </con:config></con:testStep><con:testStep id="60943d38-d4f3-41a5-9405-71fb8140bc9e" name="Test Data" type="datasource">
+        <con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Grid">
-            <con:configuration><check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Authentication is missing or wrong Authentication API Key.</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Hello World</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">English</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration>
-          </con:dataSource>
-          <con:shared>true</con:shared>
-          <con:restartShared>true</con:restartShared>
-          <con:property>TestCaseName</con:property>
-          <con:property>Text</con:property>
-          <con:property>Language</con:property>
-          <con:restartOnRun>true</con:restartOnRun>
-          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="restrequest" name="PostSingleDetection" id="c216bf84-dae9-4a31-8797-07444d3230cb">
-        <con:settings/>
-        <con:config service="SingleDetection" resourcePath="/0.2/detect" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="PostSingleDetection" id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+            <con:configuration><check>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">true&lt;/con:entry></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">Authentication is missing or wrong Authentication API Key.</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">Hello World</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">English</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><recognizeAsPlainText>true</recognizeAsPlainText></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseName</con:property><con:property>Text</con:property><con:property>Language</con:property><con:restartOnRun>true</con:restartOnRun><con:stopDatasourceExhausted>false</con:stopDatasourceExhausted></con:config></con:testStep><con:testStep id="c216bf84-dae9-4a31-8797-07444d3230cb" name="PostSingleDetection" type="restrequest">
+        <con:settings/><con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/0.2/detect" service="SingleDetection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" name="PostSingleDetection" postQueryString="true">
             <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
-            </con:settings>
-            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-            <con:request/>
-            <con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="" xmlns:con="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri><con:assertion id="f901c999-e045-485f-a58d-9105f67ceb9c" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+              <con:settings/><con:configuration>
                 <codes>401</codes>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-              <con:preemptive>true</con:preemptive>
-              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:authType>No Authorization</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters>
-              <con:entry key="q" value=""/>
-            </con:parameters>
-            <con:parameterOrder>
-              <con:entry>q</con:entry>
-            </con:parameterOrder>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="restrequest" name="GetLanguagesList" id="76bb04cf-581d-41e1-b588-d3a30b145596">
-        <con:settings/>
-        <con:config service="GetLanguagesList" resourcePath="/0.2/languages" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:restRequest name="GetLanguagesList" id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json">
+              </con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:preemptive>true</con:preemptive><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+              <con:entry key="q" value=""/></con:parameters><con:parameterOrder>
+              <con:entry>q</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep id="76bb04cf-581d-41e1-b588-d3a30b145596" name="GetLanguagesList" type="restrequest">
+        <con:settings/><con:config xsi:type="con:RestRequestStep" methodName="Method 1" resourcePath="/0.2/languages" service="GetLanguagesList" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest id="f47dd7a4-2aac-49e9-87e8-a148959ff8b6" mediaType="application/json" name="GetLanguagesList">
             <con:settings>
-              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-            </con:settings>
-            <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-            <con:request/>
-            <con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/languages</con:originalUri><con:assertion id="85e3622e-3e51-446b-b93a-55df10d5a1aa" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+              <con:settings/><con:configuration>
                 <codes>200</codes>
-              </con:configuration>
-            </con:assertion>
-            <con:credentials>
-              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-              <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-              <con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes>
-              <con:authType>No Authorization</con:authType>
-            </con:credentials>
-            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-            <con:parameters/>
-          </con:restRequest>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="groovy" name="Extracting &amp; Comparing from Get Response &amp; Payload" id="3f908c76-a09c-4f2f-9440-28a94034235d">
-        <con:settings/>
-        <con:config>
+              </con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep id="3f908c76-a09c-4f2f-9440-28a94034235d" name="Extracting &amp; Comparing from Get Response &amp; Payload" type="groovy">
+        <con:settings/><con:config>
           <script>import  java.io.*;
 import jxl.* ; 
 import jxl.write.* ; 
@@ -350,16 +265,9 @@ rowT0.createCell(7).setCellValue(SingleDetectionResponse );
         {
            log.info(ex);
         }</script>
-        </con:config>
-      </con:testStep>
-      <con:testStep type="datasourceloop" name="Data Source Loop" id="945e6a8b-c698-4a70-a00b-cd7dd3ce3dd5">
-        <con:settings/>
-        <con:config>
+        </con:config></con:testStep><con:testStep id="945e6a8b-c698-4a70-a00b-cd7dd3ce3dd5" name="Data Source Loop" type="datasourceloop">
+        <con:settings/><con:config>
           <dataSourceStep>Test Data</dataSourceStep>
           <targetStep>PostSingleDetection</targetStep>
           <discardResults>true</discardResults>
-        </con:config>
-      </con:testStep>
-      <con:properties/>
-      <con:reportParameters/>
-    </con:testCase>
+        </con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

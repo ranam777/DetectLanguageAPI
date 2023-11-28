@@ -1,38 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="detect" path="/0.2/detect" id="c368e9f4-a321-480e-8f87-bc07eafa8558" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="6ee23b6c-891d-49fe-9264-794abc568606"><con:setting id="c368e9f4-a321-480e-8f87-bc07eafa8558fileName">detect</con:setting></con:settings>
-      <con:parameters/>
-      <con:method name="Method 1" id="d91376b7-76d0-418d-a6f6-e696e40cf5de" method="POST">
-        <con:settings/>
-        <con:parameters>
+<con:resource id="c368e9f4-a321-480e-8f87-bc07eafa8558" name="detect" path="/0.2/detect" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="4cf58562-1adf-423c-a808-17a309a58622"><con:setting id="c368e9f4-a321-480e-8f87-bc07eafa8558fileName">detect</con:setting></con:settings><con:parameters/><con:method id="d91376b7-76d0-418d-a6f6-e696e40cf5de" method="POST" name="Method 1">
+        <con:settings/><con:parameters>
           <con:parameter required="true">
-            <con:name>q</con:name>
-            <con:value/>
-            <con:style>QUERY</con:style>
-            <con:default/>
-          </con:parameter>
-        </con:parameters>
-        <con:request name="Request 1" id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" postQueryString="true">
+            <con:name>q</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter></con:parameters><con:request id="bf03f91b-4096-4587-9029-af0d86988db6" mediaType="application/x-www-form-urlencoded" name="Request 1" postQueryString="true">
           <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
-          </con:settings>
-          <con:endpoint>https://ws.detectlanguage.com</con:endpoint>
-          <con:request/>
-          <con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri>
-          <con:credentials>
-            <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-            <con:preemptive>true</con:preemptive>
-            <con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes>
-            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
-            <con:authType>No Authorization</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:parameters>
-            <con:entry key="q" value="test"/>
-          </con:parameters>
-          <con:parameterOrder>
-            <con:entry>q</con:entry>
-          </con:parameterOrder>
-        </con:request>
-      </con:method>
-    </con:resource>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="Authorization" value="Bearer 5182c34536b8c36d2a890fd5eaef1db2" xmlns:con="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ws.detectlanguage.com</con:endpoint><con:request/><con:originalUri>https://ws.detectlanguage.com/0.2/detect</con:originalUri><con:credentials>
+            <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:preemptive>true</con:preemptive><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+            <con:entry key="q" value="test"/></con:parameters><con:parameterOrder>
+            <con:entry>q</con:entry></con:parameterOrder></con:request></con:method></con:resource>

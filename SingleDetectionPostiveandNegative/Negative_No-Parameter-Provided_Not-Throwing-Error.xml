@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="c47c1e3f-66a0-450e-a8af-a38f12b7cc08" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Negative_No Parameter Provided_Not Throwing Error" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-      <con:settings id="1af5e4b3-9b6e-46c4-9666-467c42ef20a1"><con:setting id="c47c1e3f-66a0-450e-a8af-a38f12b7cc08fileName">Negative_No-Parameter-Provided_Not-Throwing-Error</con:setting></con:settings>
-      <con:testStep type="datasourceloop" name="Data Source Loop" id="2632fc0a-9965-4666-b3ad-6bb005b1ca01">
-        <con:settings/>
-        <con:config>
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="c47c1e3f-66a0-450e-a8af-a38f12b7cc08" keepSession="false" name="Negative_No Parameter Provided_Not Throwing Error" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+      <con:settings id="127c27a9-df18-4dea-929b-78fc0010e8c0"><con:setting id="c47c1e3f-66a0-450e-a8af-a38f12b7cc08fileName">Negative_No-Parameter-Provided_Not-Throwing-Error</con:setting></con:settings><con:testStep id="2632fc0a-9965-4666-b3ad-6bb005b1ca01" name="Data Source Loop" type="datasourceloop">
+        <con:settings/><con:config>
           <dataSourceStep>Test Data</dataSourceStep>
           <targetStep>PostSingleDetection</targetStep>
           <discardResults>true</discardResults>
-        </con:config>
-      </con:testStep>
-      <con:properties/>
-      <con:reportParameters/>
-    </con:testCase>
+        </con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
